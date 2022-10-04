@@ -1,38 +1,211 @@
-.App {
-  text-align: center;
+body {
+  background: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar {
+  position: sticky;
+  top: 0;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.6);
+  z-index: 999;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar header {
   display: flex;
-  flex-direction: column;
   align-items: center;
+}
+
+.navbar img {
+  width: 80px;
+  height: 80px;
+}
+
+.navbar h2 {
+  font-size: 25px;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.container.home h1 {
+  font-size: 45px;
+}
+
+.container.home p {
+  font-size: 20px;
+}
+
+.image-container {
+  width: 100%;
+  margin: auto;
+}
+
+.image-container img {
+  width: 100%;
+  margin: auto;
+}
+
+.info p {
+  font-size: 18px;
+  color: rgba(128, 128, 128, 0.719);
+}
+
+button {
+  background-image: linear-gradient(to left,
+      rgb(0, 81, 255),
+      rgb(46, 135, 237));
+}
+
+.info .image-container {
+  width: 90%;
+  margin: auto;
+}
+
+.info .image-container img {
+  width: 100%;
+}
+
+.tokenomics p {
+  width: 60%;
+  margin: auto;
+  font-size: 15px !important;
+  line-height: 30px;
+}
+
+.tokenomics .tokenomics-info,
+.tokenomics .tokenomics-list {
+  text-align: left !important;
+}
+
+.tokenomics .tokenomics-info p {
+  margin-top: 20px;
+  width: 90% !important;
+}
+
+.tokenomics-list span {
+  color: rgba(128, 128, 128, 0.719);
+}
+
+.tokenomics-list ul li {
+  margin-top: 15px;
+}
+
+.tokenomics-list ul li .range {
+  padding: 5px;
+  width: 120px;
+  height: 5px;
+  background-color: rgb(103, 103, 103);
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  margin-top: 5px;
+}
+
+.tokenomics-list ul li .range div {
+  background-color: blue;
+  padding: 3px;
+  height: 5px;
+  border-radius: 30px;
+}
+
+.tokenomics-list ul li .destroy div {
+  width: 10%;
+  background-color: yellow;
+}
+
+.tokenomics-list ul li .fair div {
+  width: 40%;
+  background-color: lightcoral;
+}
+
+.tokenomics-list ul li .burn div {
+  width: 50%;
+  background-color: lime;
+}
+
+footer .social-icons li {
+  width: 70px;
+  height: 70px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  background-color: rgba(106, 106, 106, 0.5);
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.social-icons a i {
+  width: 100%;
+  height: 100%;
+  color: aliceblue;
+}
+
+.social-icons img {
+  width: 40px;
+}
+
+.accordion,
+.accordion .accordion-item,
+.accordion .accordion-header,
+.accordion button {
+  background-color: black !important;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.header-dev {
+  font-size: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.count-down ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  list-style: none;
+  line-height: 20px;
+}
+
+.count-down ul span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.count-down p {
+  font-weight: 800;
+  font-size: 40px;
+}
+
+.carousel {
+  min-height: 55vh;
+}
+
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: inside;
+}
+
+@media screen and (max-width: 960px) {
+  .tokenomics p {
+    width: 100% !important;
   }
-  to {
-    transform: rotate(360deg);
+
+  .top-image {
+    display: none;
+  }
+
+  .header-dev {
+    font-size: 24px;
+  }
+
+  footer .social-icons li {
+    width: 60px;
+    height: 60px;
   }
 }
